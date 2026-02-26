@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutCores"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <Button
+        android:id="@+id/btnVermelho"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:text="🔴 Vermelho"
+        android:textSize="26sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="20dp"/>
+
+    <Button
+        android:id="@+id/btnAzul"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:text="🔵 Azul"
+        android:textSize="26sp"
+        app:layout_constraintTop_toBottomOf="@id/btnVermelho"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="20dp"/>
+
+    <Button
+        android:id="@+id/btnAmarelo"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:text="🟡 Amarelo"
+        android:textSize="26sp"
+        app:layout_constraintTop_toBottomOf="@id/btnAzul"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="20dp"/>
+
+    <Button
+        android:id="@+id/btnVerde"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:text="🟢 Verde"
+        android:textSize="26sp"
+        app:layout_constraintTop_toBottomOf="@id/btnAmarelo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="20dp"/>
+
+    <Button
+        android:id="@+id/btnVoltar"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:text="⬅ Voltar"
+        android:textSize="24sp"
+        android:backgroundTint="#FF9800"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="20dp"/>
+
+    <TextView
+        android:id="@+id/txtFeedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Muito bem!"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
